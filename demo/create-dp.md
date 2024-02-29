@@ -136,7 +136,7 @@ oc create secret generic nova-migration-ssh-key --from-file=ssh-privatekey=id --
 
 2. Deploy the Dataplane
 
-Replace uuid in osp-ng-dataplane-node-set-deploy.yaml and apply
+Replace uuid and registry.redhat.io user and password in osp-ng-dataplane-node-set-deploy.yaml and apply
 ```
 oc apply -f osp-ng-dataplane-node-set-deploy.yaml
 oc apply -f osp-ng-dataplane-deployment.yaml
